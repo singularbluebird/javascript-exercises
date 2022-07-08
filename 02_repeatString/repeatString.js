@@ -1,4 +1,7 @@
 const repeatString = function(string, num) {
+
+    if (num < 0) return "ERROR"
+
     //get an empty string to put all the repetitions in there.
     let word = "";
 
