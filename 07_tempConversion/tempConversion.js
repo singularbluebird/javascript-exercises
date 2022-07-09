@@ -14,7 +14,19 @@ const ftoc = function(f) {
 
 };
 
-const ctof = function() {
+const ctof = function(c) {
+
+  let conversion = (c * (9/5)) + 32;
+
+  if (!(Number.isInteger(conversion))) {
+
+    let rounded = parseFloat(conversion.toFixed(1));
+
+    return rounded;
+
+  }
+
+  return conversion;
 
 };
 
