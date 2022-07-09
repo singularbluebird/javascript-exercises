@@ -1,4 +1,16 @@
-const ftoc = function() {
+const ftoc = function(f) {
+
+  let conversion = (f - 32) * (5/9);
+
+  if (!(Number.isInteger(conversion))) {
+
+    let rounded = parseFloat(conversion.toFixed(1));
+
+    return rounded;
+
+  }
+
+  return conversion;
 
 };
 
