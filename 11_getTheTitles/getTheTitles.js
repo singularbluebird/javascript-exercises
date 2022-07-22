@@ -1,6 +1,7 @@
-const getTheTitles = function() {
-
+const getTheTitles = function(obj) {
+    const titles = obj.map(book => `${book.title}`);
+    return titles;
 };
 
-// Do not edit below this line
+// Do not edit below obj line
 module.exports = getTheTitles;
